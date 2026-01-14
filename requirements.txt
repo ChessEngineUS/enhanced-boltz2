@@ -1,0 +1,26 @@
+# Enhanced Boltz-2 Requirements
+# Core dependencies
+torch>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+pyyaml>=6.0
+rdkit>=2023.3.1
+
+# Boltz-2 package
+boltz[cuda]>=2.2.1
+
+# Optional but recommended
+pandas>=2.0.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+biopython>=1.81
+prody>=2.4.0
+
+# Molecular dynamics (optional)
+# openmm>=8.0.0
+# mdtraj>=1.9.7
+
+# Development tools
+pytest>=7.3.0
+black>=23.3.0
