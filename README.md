@@ -3,6 +3,7 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ChessEngineUS/enhanced-boltz2/blob/main/Enhanced_Boltz2_Colab.ipynb)
 
 An enhanced implementation of [Boltz-2](https://github.com/jwohlwend/boltz) with optimized performance, uncertainty quantification, and high-throughput virtual screening capabilities.
 
@@ -15,9 +16,17 @@ An enhanced implementation of [Boltz-2](https://github.com/jwohlwend/boltz) with
 - **Advanced Controllability**: Method conditioning, template-based predictions, and distance constraints
 - **Performance Optimizations**: PyTorch 2.0+ compilation, batch optimization, GPU acceleration
 
-## Installation
+## Quick Start
 
-### Quick Setup (Recommended)
+### Google Colab (Recommended)
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ChessEngineUS/enhanced-boltz2/blob/main/Enhanced_Boltz2_Colab.ipynb)
+
+Click the badge above to run the notebook on a free T4 GPU!
+
+### Local Installation
+
+#### Quick Setup
 
 ```bash
 git clone https://github.com/ChessEngineUS/enhanced-boltz2.git
@@ -27,7 +36,7 @@ chmod +x setup.sh
 source boltz2_env/bin/activate
 ```
 
-### Manual Installation
+#### Manual Installation
 
 ```bash
 python3 -m venv boltz2_env
@@ -37,7 +46,7 @@ pip install -r requirements.txt
 pip install 'boltz[cuda]' -U
 ```
 
-## Quick Start
+## Usage
 
 ```python
 from enhanced_boltz2 import *
@@ -101,6 +110,7 @@ See [QUICKSTART.md](QUICKSTART.md) for detailed documentation, examples, and tro
 | Virtual Screening Pipeline | ❌ | ✅ |
 | PyTorch 2.0 Compilation | ❌ | ✅ |
 | Confidence Scoring | Basic | Comprehensive |
+| Colab Integration | ❌ | ✅ |
 
 ## Requirements
 
@@ -109,11 +119,24 @@ See [QUICKSTART.md](QUICKSTART.md) for detailed documentation, examples, and tro
 - CUDA 11.8+ (recommended)
 - ~8GB GPU memory (minimum)
 
+## Author
+
+**Tommaso R. Marena**
+- GitHub: [@ChessEngineUS](https://github.com/ChessEngineUS)
+- Date: January 14, 2026
+
 ## Citation
 
 If you use this implementation, please cite:
 
 ```bibtex
+@software{marena2026enhanced_boltz2,
+  author = {Marena, Tommaso R.},
+  title = {Enhanced Boltz-2: Optimized Biomolecular Structure and Affinity Prediction},
+  year = {2026},
+  url = {https://github.com/ChessEngineUS/enhanced-boltz2}
+}
+
 @article{passaro2025boltz2,
   title={Boltz-2: Towards Accurate and Efficient Binding Affinity Prediction},
   author={Passaro, Saro and Corso, Gabriele and Wohlwend, Jeremy and others},
